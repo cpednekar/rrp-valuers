@@ -1,0 +1,854 @@
+/*
+Author - Chandan Pednekar
+Created on - 27.09.2015
+Description - Styles for main content
+*/
+
+
+@import url("meyer_css_reset.css");
+@import url("https://fonts.googleapis.com/css?family=Glegoo:400,700|Oswald:400,700|Stardos+Stencil:700|Pathway+Gothic+One");
+
+
+
+/* BASE STYLES */
+body {	font-size: 16px;	text-align: center;		margin: 0;		padding: 0;		text-rendering: geometricPrecision;		}
+
+header {	width: 100%;	overflow: visible;		position: fixed;	z-index: 9999;		background-image: url('../image/background/crimson_red_bg.png');	}
+
+#main-content {		width: 100%;	position: relative;		float: left;		background-image: url('../image/background/cream_dust.png');		}
+
+#banner {	background-color: #1B50A0;		width: 100%;		position: relative;		float: left;		background-image: url('../image/background/crimson_red_bg.png');		}
+
+#about-us {		width: 100%;		position: relative;		float: left;	height: 100%;		padding-bottom: 5em;	}
+
+#the-team {		width: 100%;		position: relative;		float: left;	height: 100%;		padding-bottom: 5em;			}
+
+#services {		width: 100%;		position: relative;		float: left;	height: 100%;		padding-bottom: 5em;	}
+
+#projects {		width: 100%;		position: relative;		float: left;	height: 100%;		padding-bottom: 5em;		}
+
+#clientele {	width: 100%;		position: relative;		float: left;	height: 100%;		padding-bottom: 5em;	}
+
+footer {	width: 100%;		position: relative;		float:left;			padding-bottom: 2em;		background-image: url('../image/background/black_paper.png');		}
+
+
+
+ul	{	list-style: none;	text-align: center;	}
+
+a {	text-decoration: none;}
+
+
+
+/***********************************************  
+	Common Styles
+************************************************/
+
+/* Font awesome icon styling */
+i.material-icons {		color: #ffffff;		font-size: 2em;			display: inline-block;		}
+
+i.fa:hover {		color: #ffa500;		}
+
+
+h3 {	word-spacing: .25em;		position: relative;			padding: 0;			margin: 1.5em auto;			color: #373737;
+		font-family: 'Glegoo', serif;		font-weight: 400;		line-height: 1em;		}
+
+p {		position: relative;			padding: 0 2em;			margin: 2.5em auto;		font-family: 'Glegoo', serif;		
+		font-weight: 700;		color: #666666;		word-spacing: 0.25em;	line-height: 2em;			text-align: justify;			}
+
+div.img {		background-size: contain;		background-position: center center;			background-repeat: no-repeat;		}
+
+
+hr {	border: none;		height: .15em;		width: 100%;		background-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));		}
+
+
+/**********************     Header    ************************************/
+
+/* logo image */
+#navbar-header #logo a div.img {	background-image: url('../image/logo/rrp-logo.jpg');	}
+
+/* logo text single line */
+#navbar-header #logo a div.logo-text {		letter-spacing: -0.025em;		word-spacing: 0.25em;	color: #ffffff;		float: left;		position: relative;		
+											font-family: 'Stardos Stencil', cursive;		font-weight: 700;		}
+
+/* logo text multi line */
+#navbar-header #logo a div.logo-text-multiline {	text-align: left;		letter-spacing: -0.025em;		word-spacing: 0.25em;		color: #ffffff;					
+													float: left;		line-height: -0.1em;	font-family: 'Stardos Stencil', cursive;		font-weight: 700;		}		
+
+/* Mobile Menu Toggle */
+#nav-toggle + label {	background-image: url('../image/icon/hamburger_menu.png');		background-repeat: no-repeat;	background-size: contain;	
+						float: right;		margin: 1em 1em 0 0;	width: 2.5em; 	height: 2.5em;	}
+
+
+/* Main menu navigation */
+#nav ul li a {		display: block;		color: #ffffff;			font-family: 'Glegoo', serif;			font-weight: 400;		text-align: center;			}
+
+/*#nav ul li a:hover {	background-color: #762030;		}*/
+
+/* Submenu navigation */
+#nav ul li ul li a { 	background-color: #C35063;		color: #ffffff;			}
+
+
+/*************************            Banner           **************************/
+
+
+#banner #banner-text {		letter-spacing: -0.01em;		word-spacing: 0.25em;		position: relative;			line-height: 1.5em;			color: #ffffff;	
+							font-family: 'Glegoo', serif;			font-weight: 700; 		text-shadow: 0 0 0 #00152A;			text-transform: uppercase;			}
+
+
+/*************************         About Us       ****************************/
+
+#about-us [id^='memb-'] {		padding: 0 1em;		font-family: 'Glegoo', serif;		font-weight: 700;
+								color: #373737;			word-spacing: 0.2em;		line-height: 2em;		}
+
+#about-us [id$='-it'] div.img {		background-image: url('../image/membership/memb-it.jpg');		margin: 0 auto;		}
+
+#about-us [id$='-voi'] div.img {		background-image: url('../image/membership/memb-voi.jpg');		margin: 0 auto;		}
+
+#about-us [id$='-ca'] div.img {		background-image: url('../image/membership/memb-ca.jpg');		margin: 0 auto;		}
+
+
+/**************************        Team          ****************************/
+
+
+
+#the-team div.team-container {		width: 90%;		margin: 0 auto;		}
+
+#the-team div.profile-sm {		height: auto;		padding: 2.5em 0 0 0;			}
+
+#the-team div.profile-sm div.img, 	div.profile-detail div.img 
+								{		border-radius: 50%;		margin: 0 auto;		}
+
+#the-team div.profile-sm h4	, div.profile-detail h4
+								{		letter-spacing: 0.005em;		word-spacing: .1em;			padding: 1em auto;		color: #373737; 	
+										font-family: 'Glegoo', serif;		font-weight: 700;		line-height: 2em;				margin-top: 1em;			}
+
+#the-team div.profile-sm div.qual {	display: none	}
+
+#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5
+							{		letter-spacing: -0.02em;		word-spacing: .1em;			padding: 1em auto ;	
+									font-family: 'Glegoo', serif;		font-weight: 700;		line-height: 1.5em;			color: #9f9f9f;
+									margin: 0 1.5em 0 1.5em;  	}	
+
+
+#the-team div.profile-detail p {	word-spacing: .1em;		color: #373737;		line-height: 2em;		display: none;		padding: 1em 2em;		margin: 0 auto;
+									font-family: 'Glegoo', serif;		font-weight: 700;			text-align: justify;		}
+
+#the-team div.profile-detail {		display: block;		padding-top: 2.5em;	   transform-style: preserve-3d; 		-webkit-transition: -webkit-transform 2s;
+									-moz-transition: -moz-transform 2s;		-ms-transition: -ms-transform 2s;		transition: transform 2s;		}
+
+/* Display main container but hide all inner elements to avoid using empty space */
+#the-team div.profile-detail div.img {		display: none;	}
+#the-team div.profile-detail h4 {		display: none;	}
+#the-team div.profile-detail div.qual {		display: none;	}
+#the-team div.profile-detail p[id^='detail-'] {		display: none;	}
+
+#the-team div.profile-detail.display {		transform: rotate3d(0, 1, 0, 360deg);	}
+
+
+#the-team #rrp div.img {	background-image: url('../image/face/face-rrp.jpg'); 	}
+#the-team #vrp div.img {	background-image: url('../image/face/face-vrp.jpg'); 	}
+#the-team #da div.img {		background-image: url('../image/face/face-da.jpg'); 	}
+
+
+/**********************      Services        *******************************/
+
+
+#services h4 {		word-spacing: .1em;		font-family: 'Glegoo', serif;		font-weight: 700;			line-height: 1.5em;			color: black;		
+					text-transform: uppercase;				width: auto;			text-align: left;				text-decoration: underline;		
+					padding: .5em 2em;		margin-top: 0 auto;	} 
+
+
+#services div.immp {	padding: 0 auto;		}
+
+#services h5 {		letter-spacing: 0.01em;			word-spacing: .2em;		font-family: 'Glegoo', serif;		font-weight: 700;		width: 100%;		margin: 0;
+					line-height: 1em;		color: black;			text-transform: uppercase;			padding: .5em 2em;		}
+
+#services div.valuation-services {		width: 90%; 	margin: 0  auto;			}
+
+
+
+
+/********************    Clientele    **************************/
+
+.corp-client div.tata-inv-logo {		background-image: url('../image/logo/client-tatainv.png');			}
+.corp-client div.tajsats-air-logo {		background-image: url('../image/logo/client-tajsatsair.jpg');		}
+.corp-client div.taj-hotels-logo {		background-image: url('../image/logo/client-tajhotel.png');			}
+.corp-client div.vifor-logo {		background-image: url('../image/logo/client-viforpharma.png');		}
+.corp-client div.keltron-logo {		background-image: url('../image/logo/client-keltron.png');		}
+.corp-client div.hafeez-logo {		background-image: url('../image/logo/client-hafeez.jpg');	 	}
+.corp-client div.tandp-logo {		background-image: url('../image/logo/client-talati.jpg');		}
+.corp-client div.kruger-logo {		background-image: url('../image/logo/client-kruger.jpg');			}
+
+
+#clientele div.client-container {	width: 80%;		margin: 0 auto;		}
+
+#clientele div.img {	margin: .5em 2em;		width: 90%;		height: 10em;	}
+
+.corp-client {		width: 90%;		margin: 0 auto;		}
+
+
+/***************************      Projects       *********************************/
+
+.project-container div.proj-hotel-sea-rock div.img {		background-image: url('../image/project/proj-hotelsearock.jpg');		}
+.project-container div.proj-hotel-taj-president div.img {		background-image: url('../image/project/proj-hoteltajpresident.jpg');		}
+.project-container div.proj-beach-land div.img {		background-image: url('../image/project/proj-beachland.jpg');		}
+.project-container div.proj-hotel-taj-mahal div.img {		background-image: url('../image/project/proj-hoteltajmahal.jpg');		}
+.project-container div.proj-taj-sats-cat div.img {		background-image: url('../image/project/proj-tajsatscat.jpg');		}
+.project-container div.proj-kruger-india div.img {		background-image: url('../image/project/proj-krugerindia.jpg');		}
+
+
+#projects div.project-container {		width: 80%;			margin: 0 auto;		}
+
+#projects p {	text-align: center;		}
+
+#projects div[class*='proj-'] {		position: relative;			overflow: hidden;	}
+
+#projects div.img {		margin: .5em 1em;		width: 100%;		background-size: cover;		}	
+
+/* Transition effect for span */
+#projects div.img + span.show-detail {	top: 0;		}
+
+#projects span {	display: block;		width: 100%;		height: 20em;		position: absolute;		top: 100%;		z-index: 1;
+					margin: .5em 1em;			-webkit-transition: top .5s;			-moz-transition: top .5s;			transition: top .5s;		
+					background-color: maroon;		opacity: .5;	}
+
+#projects span h4 {		word-spacing: .2em;		position: relative;		padding: 0;		font-family: 'Glegoo', serif;		font-weight: 400;		
+						line-height: 1em; 		}
+
+#projects span h4, #projects span h5 {		color: #ffffff;		}
+
+
+
+/*********************************         Footer          *************************************/
+
+
+footer div[id*='icon-']	{	width: 2em;		height: 2em;		float: left;		margin: .5em 0;		}
+
+footer div[id*='icon-'] + p {		float: left;		text-align: left;		margin: .5em 0;		}
+
+#icon-business {	background-image: url('../image/icon/ic_business_white_24px.svg');		}
+#icon-call {	background-image: url('../image/icon/ic_call_white_24px.svg');		}
+#icon-smartphone {	background-image: url('../image/icon/ic_smartphone_white_24px.svg');		}
+#icon-email {	background-image: url('../image/icon/ic_email_white_24px.svg');		}
+
+footer div.contact-details {		margin: 0 auto;			padding: 0 1.5em;		width: 100%;		}
+
+
+#icon-facebook {	background-image: url('../image/icon/ic-facebook.svg');				}
+#icon-twitter {	background-image: url('../image/icon/ic-twitter.svg');		}
+#icon-linkedin {	background-image: url('../image/icon/ic-linkedin.svg');		}
+#icon-googleplus {	background-image: url('../image/icon/ic-googleplus.svg');		}
+
+footer div.social-links {		margin: 0 auto;			padding: 0 1.5em;			width: 100%;		}
+
+#icon-place {	background-image: url('../image/icon/ic-place.svg');		}
+
+footer div.other-links {		margin: 0 auto;			padding: 0 1.5em;		width: 100%;		}
+
+/* End of Common Styles */
+
+/***********************************************  
+	Mobile first
+************************************************/
+
+/* Base Styles */
+p {		font-size: .8em;		}
+
+h3 {	font-size: 1.5em;	}
+
+/* Header */
+#navbar-header {	height: 4em;	margin: 0;		padding: 0;		position: relative;		width: 100%;	float: left;	}
+	
+	/* Header logo */
+	#navbar-header #logo {	height: 2em;	 width: auto;		padding: 0.0em;	 	margin: 1.3em 0 0 .5em;			float: left;	}
+
+	#navbar-header #logo a div.img {		display: none;	}
+
+	#navbar-header #logo a div.logo-text-multiline {		display: none;	}
+
+	#navbar-header #logo a div.logo-text {		display: block;		font-size: 1.2em;		padding: .3em 0 0 .5em;		}
+
+	/* Mobile navigation toggle */
+	#navbar-header	#nav-toggle {	display: none;	}
+
+	#nav-toggle + label {	display: block;			}
+
+	/* Main menu navigation */
+	#nav {		display: none;		width: 100%;	position: relative;		float: right;		}
+
+	#nav.expand {		display: block;		}
+
+	#nav ul {	display: inline-block;		margin-top: 0em;	width: 100%;	}
+		
+	#nav ul li {		width: 100%;		line-height: 1.5em;		}
+
+	#nav ul li a {		width: 100%;	padding: .5em 0 .5em 0;			font-size: .8em;			}
+
+	/* Submenu navigation */
+	#nav ul li ul {		display: none;		margin: 0;	}
+
+	#nav ul li ul li a { 	font-size: .7em;	}
+
+
+/* Main Content */
+#main-content {		}
+	
+	/* Banner */
+	#banner {		height: 35em;	}
+
+	#banner #banner-text {		padding: 4em auto 0 auto;			font-size: 1.5em;			margin: 10em auto;	}
+
+	/* About us */
+	#about-us {		padding-top: 4em;		}
+
+	#about-us [id^='memb-'] {		font-size: .8em;			height: 10em;		margin: 4em auto;		}
+
+	#about-us [id^='memb-'] h5 {		font-size: .8em;		}
+
+	#about-us [id$='-it'] div.img {		width: 80%;		height: 80%;			}
+
+	#about-us [id$='-voi'] div.img {		width: 80%;		height: 80%;		}
+
+	#about-us [id$='-ca'] div.img {		width: 80%;		height: 80%;		}
+
+	#about-us [id^='memb-'] span {	padding: .5em 1em;		}
+
+
+
+	/* The Team */
+	#the-team {		padding-top: 4em;	}
+
+	#the-team div.profile-sm div.img, 	div.profile-detail div.img {		width: 10em;		height: 10em;		}
+
+	#the-team div.profile-sm h4	, div.profile-detail h4 {		font-size: .9em;	}
+
+	#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5 {		font-size: .7em;	}
+
+	/* Services */
+	#services {		padding-top: 4em;		}
+
+	#services h4 {		font-size: 1.3em;			} 
+
+	#services h4:nth-of-type(2) {		margin-top: 10em;		}
+
+	#services h5 {		font-size: .8em;			}
+
+	#services div.immp:nth-of-type(odd)  {		text-align: justify;	}
+
+	#services div.immp:nth-of-type(even)  {		text-align: justify;	}
+
+
+
+	/* Projects */
+	#projects {		padding-top: 4em;	}
+
+	#projects div.img {		height: 10em;		}
+
+	#projects span h4 {		font-size: 1.1em;		margin: 3em auto .5em auto;			}
+
+
+
+	/* Clientele */
+	#clientele {		padding-top: 4em;	}
+
+
+
+/* Footer */
+footer div[id*='icon-'] + p {		font-size: 0.8em;		}
+
+
+/* End of Mobile First */
+
+
+
+
+
+
+/***********************************************  
+	Mobile - 600px
+************************************************/
+
+@media only screen and ( min-width: 37.500em ) {
+
+	/* Base Styles */
+	p {		font-size: 1.2em;		}
+
+	h3 {	font-size: 2em;		}
+
+	/* Header */
+	#navbar-header {	height: 4em;	margin: 0;		padding: 0;		position: relative;		width: 100%;	float: left;	}
+		
+		/* Header logo */
+		#navbar-header #logo {	height: 2em;	 width: auto;		padding: 0.0em;	 	margin: 1.3em 0 0 .5em;			float: left;	}
+
+		#navbar-header #logo a div.img {		display: none;	}
+
+		#navbar-header #logo a div.logo-text-multiline {		display: none;	}
+
+		#navbar-header #logo a div.logo-text {		display: block;		font-size: 1.2em;		padding: .3em 0 0 .5em;		}
+
+		/* Mobile navigation toggle */
+		#navbar-header	#nav-toggle {	display: none;	}
+
+		#nav-toggle + label {	display: block;			}
+
+		/* Main menu navigation */
+		#nav {		display: none;		width: 100%;	position: relative;		float: right;		}
+
+		#nav.expand {		display: block;		}
+
+		#nav ul {	display: inline-block;		margin-top: 0em;	width: 100%;	}
+			
+		#nav ul li {		width: 100%;		line-height: 1.5em;		}
+
+		#nav ul li a {		width: 100%;	padding: .5em 0 .5em 0;			font-size: 1.1em;			}
+
+		/* Submenu navigation */
+		#nav ul li ul {		display: none;		margin: 0;	}
+
+		#nav ul li ul li a { 	font-size: 1em;	}
+
+
+	/* Main Content */
+	#main-content {		}
+		
+		/* Banner */
+		#banner {		height: 35em;	}
+
+		#banner #banner-text {		padding: 4em auto 0 auto;			font-size: 2.5em;			margin: 5em auto;	}
+
+		/* About us */
+		#about-us {		padding-top: 4em;		}
+
+		#about-us [id^='memb-'] {		font-size: 1em;		height: 15em;		margin: 2.5em auto;		}
+
+		#about-us [id^='memb-'] h5 {		font-size: .8em;		}
+
+		#about-us [id$='-it'] div.img {		width: 80%;		height: 80%;			}
+
+		#about-us [id$='-voi'] div.img {		width: 80%;		height: 80%;		}
+
+		#about-us [id$='-ca'] div.img {		width: 80%;		height: 80%;		}
+
+		#about-us [id^='memb-'] span {	padding: .5em 1em;		}
+
+
+
+		/* The Team */
+		#the-team {		padding-top: 4em;	}
+
+		#the-team div.profile-sm div.img, 	div.profile-detail div.img {		width: 15em;		height: 15em;		}
+
+		#the-team div.profile-sm h4	, div.profile-detail h4 {		font-size: 1.1em;	}
+
+		#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5 {		font-size: .9em;	}
+
+
+		/* Services */
+		#services {		padding-top: 4em;		}
+
+		#services h4 {		font-size: 1.5em;			} 
+
+		#services h4:nth-of-type(2) {		margin-top: 12.5em;		}
+
+		#services h5 {		font-size: 1em;			}
+
+		#services div.immp:nth-of-type(odd)  {		text-align: justify;	}
+
+		#services div.immp:nth-of-type(even)  {		text-align: justify;	}
+
+
+
+		/* Projects */
+		#projects {		padding-top: 4em;	}
+
+		#projects div.img {		height: 20em;		}
+
+		#projects span h4 {		font-size: 1.5em;		margin: 5em auto .5em auto;			}
+
+
+
+		/* Clientele */
+		#clientele {		padding-top: 4em;	}
+
+
+	/* Footer */
+	footer div[id*='icon-'] + p {		font-size: 1.2em;		}
+
+
+}
+
+
+/* End of Mobile 600px */
+
+
+
+
+
+
+
+/*******************************  
+	IPAD Portrait - 768px
+*******************************/
+
+@media only screen and ( min-width: 48em ) {
+
+	/* Base Styles */
+	p {		font-size: 1.2em;		}
+
+	h3 {	font-size: 2em;		}
+
+	/* Header */
+	#navbar-header {	height: 5em;	margin: 0;		padding: 0;		position: relative;		width: 10em;	float: left;	}
+
+		/* Header logo */		
+		#navbar-header #logo {		height: 4em;	width: 5em;		padding: .2em;		margin: .5em 0 0 1em;	float: left;	}
+
+		#navbar-header #logo a div.img {		display: block;			height: calc(4em - 0.4em);		width: calc(4em - 0.4em);		}
+
+		#navbar-header #logo a div.logo-text {		display: none;		}
+
+		#navbar-header #logo a div.logo-text-multiline {		display: none;	}
+
+		/* Mobile navigation toggle */
+		#nav-toggle {	display: none;	}
+
+		#nav-toggle + label {	display: none;	}
+
+		/* Main menu navigation */
+		#nav {		display: block;		opacity: 1;		float: right;		margin: 1.8em .5em 0 .5em;		position: relative;		width: auto;	}
+
+		#nav ul {	list-style: none;		margin: 0;		padding: 0;		text-align: center;	}
+
+		#nav ul li {	float: left;	position: relative;		line-height: 2em;		width: 6em;			}
+
+		#nav ul li a {		display: block;		padding: 0em 1em;		font-size: .9em;	 }
+
+		/* Submenu navigation */
+		#nav ul li ul {		display: none;		margin-top: 0;		margin-left: 0;		position: absolute;			}
+
+		#nav ul li ul li {		width: 6em; 		}
+
+		#nav ul li ul li a { 	font-size: .8em;	}
+
+
+	/* Main Content */
+	#main-content {		}
+
+		/* Banner */
+		#banner {	height: 40em;	}
+
+		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 3em;			margin: 5.5em auto;		}
+
+		/* About us */
+		#about-us {		padding-top: 5em;	}
+
+		#about-us [id^='memb-'] {		font-size: 1em;		margin: .5em auto;		height: 5em;	}
+
+		#about-us [id^='memb-'] h5 {		font-size: .8em;		}
+
+		#about-us [id$='-it'] div.img {		width: 100%;		height: 100%;		}
+
+		#about-us [id$='-voi'] div.img {		width: 100%;		height: 100%;		}
+
+		#about-us [id$='-ca'] div.img {		width: 100%;		height: 100%;		}
+
+		#about-us [id^='memb-'] span {	padding: 1em 1em;	}
+
+
+
+		/* The Team */
+		#the-team {		padding-top: 5em;	}
+
+		#the-team div.profile-sm div.img, 	div.profile-detail div.img {		width: 10em;		height: 10em;		}
+
+		#the-team div.profile-sm h4	, div.profile-detail h4 {		font-size: 1.1em;	}
+
+		#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5 {		font-size: .9em;	}
+
+
+		/* Services */
+		#services {		padding-top: 5em;		}
+
+		#services h4 {		font-size: 1.5em;			} 
+
+		#services h4:nth-of-type(2) {		margin-top: 7em;		}
+
+		#services h5 {		font-size: 1em;			}
+
+		#services div.immp:nth-of-type(odd)  {		text-align: justify;	}
+
+		#services div.immp:nth-of-type(even)  {		text-align: justify;	}
+
+
+
+		/* Projects */
+		#projects {		padding-top: 5em;	}
+
+		#projects div.img {		height: 10em;		}
+
+		#projects span h4 {		font-size: 1em;			margin: 4em auto .5em auto;		}
+
+		#projects span h5 {		font-size: .8em;		color: #ffffff;			}
+
+
+		/* Clientele */
+		#clientele {		padding-top: 5em;	}
+
+
+	/* Footer */
+	footer div[id*='icon-'] + p {		font-size: .8em;		}
+
+
+	 
+
+
+
+}
+/* End of IPAD Portrait */
+
+
+/*******************************  
+	IPAD Landscape - 1024px
+*******************************/
+
+@media only screen and ( min-width: 64em ) {
+
+	/* Base Styles */
+	p {		font-size: 1.2em;		}
+
+	h3 {	font-size: 2em;		}
+
+	/* Header */
+	#navbar-header {	height: 5em;	margin: 0;		padding: 0;		width: 30em;		position: relative;		float: left;		}
+
+		/* Header logo */
+		#navbar-header #logo {		height: 4em;	width: 25em;		padding: .2em;		margin: .5em 0 0 1em;	float: left;		}
+
+		#navbar-header #logo a div.img {		display: block;		float: left;	height: calc(4em - 0.4em); 		width: calc(4em - 0.4em);	}
+
+		#navbar-header #logo a div.logo-text {		display: none;		}	
+
+		#navbar-header #logo a div.logo-text-multiline {	display: block;			padding: 0em 0 0 0.3em;		font-size: 2em;		margin: 0;			}			
+
+		/* Mobile navigation toggle */
+		#nav-toggle {	display: none;	}
+
+		#nav-toggle + label {	display: none;	}
+
+		/* Main menu navigation */
+		#nav {		display: block;		opacity: 1;		float: right;		margin: 1.4em 1em 0 0;		position: relative;		width: auto;	}
+
+		#nav ul {	list-style: none;		margin: 0;		padding: 0;		text-align: center;	}
+
+		#nav ul li {	float: left;	position: relative;		line-height: 2em;		width: 6em;		}
+
+		#nav ul li a {		display: block;			padding: .3em .70em;	font-size: .9em;		}
+
+
+		/* Submenu navigation */
+		#nav ul li ul {		display: none;		margin-top: 0;		margin-left: 0;		position: absolute;			}
+
+		#nav ul li ul li {		width: 6em; 		}
+
+		#nav ul li ul li a { 	font-size: .8em;	}
+
+
+	/* Main Content */
+	#main-content {		}
+
+		/* Banner */
+		#banner {	height: 40em;	}
+
+		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 4em;			margin: 3.5em auto;		}
+
+		/* About us */
+		#about-us {		padding-top: 5em;	}
+
+		#about-us [id^='memb-'] {		font-size: 1em;			margin: .5em auto;		height: 10em;	}
+
+		#about-us [id^='memb-'] h5 {		font-size: .8em;		}
+
+		#about-us [id$='-it'] div.img {		width: 80%;		height: 80%;		}
+
+		#about-us [id$='-voi'] div.img {		width: 80%;		height: 80%;		}
+
+		#about-us [id$='-ca'] div.img {		width: 80%;		height: 80%;		}
+
+		#about-us [id^='memb-'] span {	padding: 1em 1em;	}
+
+
+
+		/* The Team */
+		#the-team {		padding-top: 5em;	}
+
+		#the-team div.profile-sm div.img, 	div.profile-detail div.img {		width: 15em;		height: 15em;		}
+
+		#the-team div.profile-sm h4	, div.profile-detail h4 {		font-size: 1.1em;	}
+
+		#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5 {		font-size: .9em;	}
+
+
+		/* Services */
+		#services {		padding-top: 5em;		}
+
+		#services h4 {		font-size: 1.5em;			} 
+
+		#services h4:nth-of-type(2) {		margin-top: 6em;		}
+
+		#services h5 {		font-size: 1em;			} 
+
+		#services div.immp:nth-of-type(odd)  {		text-align: justify;	}
+
+		#services div.immp:nth-of-type(even)  {		text-align: justify;	}
+
+	
+
+		/* Projects */
+		#projects {		padding-top: 5em;	}
+
+		#projects div.img {		height: 10em;		}
+
+		#projects span h4 {		font-size: 1.1em;		margin: 3em auto .5em auto; 	}
+
+		#projects span h5 {		font-size: .9em;			}
+
+
+
+		/* Clientele */
+		#clientele {		padding-top: 5em;	}
+
+
+
+	/* Footer */
+	footer div[id*='icon-'] + p {		font-size: 1em;		}
+
+
+
+
+
+}
+/* End of IPAD Landscape */
+
+
+/********************************  
+	Desktop - 1200px and higher
+*********************************/
+
+@media only screen and ( min-width: 75em ) {
+
+	/* Base Styles */
+	p {		font-size: 1.2em;		}
+
+	h3 {	font-size: 2em;		}
+
+	/* Header */
+	#navbar-header {	height: 5em;	margin: 0;		padding: 0;			position: relative;		width: 40em;		float: left;		}
+
+		/* Header logo */
+		#navbar-header #logo {		height: 4em;	width: 35em;		padding: .2em;		margin: .5em 0 0 1em;	float: left;		}
+
+		#navbar-header #logo a div.img {		display: block;		float: left;	height: calc(4em - 0.4em); 		width: calc(4em - 0.4em);	}
+
+		#navbar-header #logo a div.logo-text {		display: block;		padding: 0.4em 0 0 0.3em;		font-size: 2.2em;		margin: 0;			}
+
+		#navbar-header #logo a div.logo-text-multiline {	display: none;		}			
+
+		/* Mobile navigation toggle */
+		#nav-toggle {	display: none;	}
+
+		#nav-toggle + label {	display: none;	}
+
+		/* Main menu navigation */
+		#nav {		display: block;		opacity: 1;		float: right;		margin: 1.3em 1em 0 0;		position: relative;		width: auto;		}
+
+		#nav ul {	list-style: none;		margin: 0;		padding: 0;		text-align: center;	}
+
+		#nav ul li {	float: left;	position: relative;		line-height: 2em;		width: 6em;	}
+
+		#nav ul li a {		display: block;			padding: .3em 0.70em;		font-size: .9em;			}
+
+		/* Submenu navigation */
+		#nav ul li ul {		display: none;		margin-top: 0;		margin-left: 0;		position: absolute;			}
+
+		#nav ul li ul li {		width: 6em; 		}
+
+		#nav ul li ul li a { 	font-size: .8em;	}
+
+
+	/* Main Content */
+	#main-content {		}
+
+		/* Banner */
+		#banner {	height: 40em;	}
+
+		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 4em;			margin: 3.5em auto;			}
+
+		/* About us */
+		#about-us {		padding-top: 5em;	}
+
+		#about-us [id^='memb-'] {		font-size: 1em;			margin: .5em auto;		height: 10em;	}
+
+		#about-us [id^='memb-'] h5 {		font-size: .8em;		}
+
+		#about-us [id$='-it'] div.img {		width: 80%;		height: 80%;		}
+
+		#about-us [id$='-voi'] div.img {		width: 80%;		height: 80%;		}
+
+		#about-us [id$='-ca'] div.img {		width: 80%;		height: 80%;		}
+
+		#about-us [id^='memb-'] span {	padding: 1em 1em;	}
+
+
+
+		/* The Team */
+		#the-team {		padding-top: 5em;	}
+
+		#the-team div.profile-sm div.img, 	div.profile-detail div.img {		width: 15em;		height: 15em;		}
+	
+		#the-team div.profile-sm h4	, div.profile-detail h4 {		font-size: 1.1em;	}
+
+		#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5 {		font-size: .9em;	}
+
+
+		/* Services */
+		#services {		padding-top: 5em;		}
+
+		#services h4 {		font-size: 1.5em;		} 
+
+		#services h4:nth-of-type(2) {		margin-top: 6em;		}
+
+		#services h5 {		font-size: 1em;			} 
+
+		#services div.immp:nth-of-type(odd)  {		text-align: justify;		}
+
+		#services div.immp:nth-of-type(even)  {		text-align: justify;			}
+
+	
+
+		/* Projects */
+		#projects {		padding-top: 5em;	}
+
+		#projects div.img {		height: 10em;		}
+
+		#projects span h4 {		font-size: 1.2em;		margin: 2.5em auto .5em auto;	}
+
+		#projects span h5 {		font-size: 1em;		}
+
+		
+
+		/* Clientele */
+		#clientele {		padding-top: 5em;		}
+
+
+
+	/* Footer */
+	footer div[id*='icon-'] + p {		font-size: 1.2em;		}
+
+
+
+
+	
+
+}
+/* End of Desktop - 1200px and higher 

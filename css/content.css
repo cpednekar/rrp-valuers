@@ -30,7 +30,7 @@ header {	width: 100%;	overflow: visible;		position: fixed;	z-index: 9999;		backg
 
 #clientele {	width: 100%;		position: relative;		float: left;	height: 100%;		padding-bottom: 5em;	}
 
-footer {	width: 100%;		position: relative;		float:left;			padding-bottom: 2em;		background-image: url('../image/background/black_paper.png');		}
+footer {	width: 100%;		position: relative;		float:left;			padding-bottom: 2em;		background-image: url('../image/background/cream_dust.png');		}
 
 
 
@@ -44,12 +44,6 @@ a {	text-decoration: none;}
 	Common Styles
 ************************************************/
 
-/* Font awesome icon styling */
-i.material-icons {		color: #ffffff;		font-size: 2em;			display: inline-block;		}
-
-i.fa:hover {		color: #ffa500;		}
-
-
 h3 {	word-spacing: .25em;		position: relative;			padding: 0;			margin: 1.5em auto;			color: #373737;
 		font-family: 'Glegoo', serif;		font-weight: 400;		line-height: 1em;		}
 
@@ -59,7 +53,8 @@ p {		position: relative;			padding: 0 2em;			margin: 2.5em auto;		font-family: '
 div.img {		background-size: contain;		background-position: center center;			background-repeat: no-repeat;		}
 
 
-hr {	border: none;		height: .15em;		width: 100%;		background-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));		}
+hr {	border: none;		height: .063em;		width: 100%;		background-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(102, 102, 102, .75), rgba(0, 0, 0, 0));		}
+
 
 
 /**********************     Header    ************************************/
@@ -171,6 +166,7 @@ hr {	border: none;		height: .15em;		width: 100%;		background-image: linear-gradi
 
 #services div.valuation-services {		width: 90%; 	margin: 0  auto;			}
 
+#services div.valuation-services h5::first-letter  {		text-transform: lowercase;		}
 
 
 
@@ -212,11 +208,11 @@ hr {	border: none;		height: .15em;		width: 100%;		background-image: linear-gradi
 #projects div.img {		margin: .5em 1em;		width: 100%;		background-size: cover;		}	
 
 /* Transition effect for span */
-#projects div.img + span.show-detail {	top: 0;		}
+/*#projects div.img + span.show-detail {	top: 0;		}*/
 
-#projects span {	display: block;		width: 100%;		height: 20em;		position: absolute;		top: 100%;		z-index: 1;
-					margin: .5em 1em;			-webkit-transition: top .5s;			-moz-transition: top .5s;			transition: top .5s;		
-					background-color: maroon;		opacity: .5;	}
+#projects span {	display: block;		width: 100%;		height: 3.4em;		position: absolute;		top: 65%;		z-index: 1;
+					margin: 0em 1em;			-webkit-transition: top .5s;			-moz-transition: top .5s;			transition: top .5s;		
+					background-color: maroon;		opacity: .5;			padding: .5em 0em;		}
 
 #projects span h4 {		word-spacing: .2em;		position: relative;		padding: 0;		font-family: 'Glegoo', serif;		font-weight: 400;		
 						line-height: 1em; 		}
@@ -354,9 +350,11 @@ h3 {	font-size: 1.5em;	}
 
 	#projects div.img {		height: 10em;		}
 
-	#projects span h4 {		font-size: 1.1em;		margin: 3em auto .5em auto;			}
+	#projects span {		height: 3.4em;		top: 65%;		}
 
+	#projects span h4 {		font-size: 1.1em;		margin: 0 auto;			}
 
+	#projects span h5 {		font-size: .9em;		}
 
 	/* Clientele */
 	#clientele {		padding-top: 4em;	}
@@ -478,7 +476,11 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#projects div.img {		height: 20em;		}
 
-		#projects span h4 {		font-size: 1.5em;		margin: 5em auto .5em auto;			}
+		#projects span {		height: 3.7em;		top: 80%;		}
+
+		#projects span h4 {		font-size: 1.5em;		margin: 0 auto;			}
+
+		#projects span h5 {		font-size: 1.2em;		}
 
 
 
@@ -605,9 +607,11 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#projects div.img {		height: 10em;		}
 
-		#projects span h4 {		font-size: 1em;			margin: 4em auto .5em auto;		}
+		#projects span {		height: 3.4em;		top: 65%;		}
 
-		#projects span h5 {		font-size: .8em;		color: #ffffff;			}
+		#projects span h4 {		font-size: 1em;			margin: 0 auto;		}
+
+		#projects span h5 {		font-size: .7em;		color: #ffffff;			}
 
 
 		/* Clientele */
@@ -722,7 +726,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#services div.immp:nth-of-type(odd)  {		text-align: justify;	}
 
-		#services div.immp:nth-of-type(even)  {		text-align: justify;	}
+		#services div.immp:nth-of-type(even)  {		text-align: justify;		margin-left: -5em;		}
 
 	
 
@@ -731,9 +735,11 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#projects div.img {		height: 10em;		}
 
-		#projects span h4 {		font-size: 1.1em;		margin: 3em auto .5em auto; 	}
+		#projects span {		height: 3.4em;		top: 65%;		}
 
-		#projects span h5 {		font-size: .9em;			}
+		#projects span h4 {		font-size: 1.1em;		margin: 0 auto; 	}
+
+		#projects span h5 {		font-size: .8em;			}
 
 
 
@@ -848,7 +854,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#services div.immp:nth-of-type(odd)  {		text-align: justify;		}
 
-		#services div.immp:nth-of-type(even)  {		text-align: justify;			}
+		#services div.immp:nth-of-type(even)  {		text-align: justify;		margin-left: -10em;		}
 
 	
 
@@ -857,9 +863,11 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#projects div.img {		height: 10em;		}
 
-		#projects span h4 {		font-size: 1.2em;		margin: 2.5em auto .5em auto;	}
+		#projects span {		height: 3.4em;		top: 65%;		}
 
-		#projects span h5 {		font-size: 1em;		}
+		#projects span h4 {		font-size: 1.2em;		margin: 0 auto;	}
+
+		#projects span h5 {		font-size: .9em;		}
 
 		
 

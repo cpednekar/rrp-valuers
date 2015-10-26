@@ -60,10 +60,10 @@ $('#the-team div.img').on('click', function(){
 
 
 // Show/ Hide project detail on image click
-$('#projects div[class*="proj-"]').click(function(){
-	// Display <span> immediately following the image
-	( $(this).find('span') ).toggleClass('show-detail');
-});
+// $('#projects div[class*="proj-"]').click(function(){
+// 	// Display <span> immediately following the image
+// 	( $(this).find('span') ).toggleClass('show-detail');
+// });
 
 
 

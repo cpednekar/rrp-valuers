@@ -6,14 +6,14 @@ Description - Styles for main content
 
 
 @import url("meyer_css_reset.css");
-@import url("https://fonts.googleapis.com/css?family=Glegoo:400,700|Oswald:400,700|Stardos+Stencil:700|Pathway+Gothic+One");
+@import url("https://fonts.googleapis.com/css?family=Glegoo:400,700|Oswald:400,700|Pathway+Gothic+One");
 
 
 
 /* BASE STYLES */
 body {	font-size: 16px;	text-align: center;		margin: 0;		padding: 0;		text-rendering: geometricPrecision;		}
 
-header {	width: 100%;	overflow: visible;		position: fixed;	z-index: 9999;		background-image: url('../image/background/crimson_red_bg.png');	}
+header {	width: 100%;	overflow: visible;		position: fixed;	z-index: 9999;		background-image: url('../image/background/cream_dust.png');	}
 
 #main-content {		width: 100%;	position: relative;		float: left;		background-image: url('../image/background/cream_dust.png');		}
 
@@ -64,28 +64,28 @@ hr {	border: none;		height: .15em;		width: 100%;		background-image: linear-gradi
 /**********************     Header    ************************************/
 
 /* logo image */
-#navbar-header #logo a div.img {	background-image: url('../image/logo/rrp-logo.jpg');	}
+#navbar-header #logo a div.img {	background-image: url('../image/logo/rrp-abbrv-logo.png');	}
 
 /* logo text single line */
-#navbar-header #logo a div.logo-text {		letter-spacing: -0.025em;		word-spacing: 0.25em;	color: #ffffff;		float: left;		position: relative;		
-											font-family: 'Stardos Stencil', cursive;		font-weight: 700;		}
+#navbar-header #logo a div.logo-text {		letter-spacing: -0.025em;		word-spacing: 0.25em;	color: #666666;		float: left;		position: relative;		
+											font-family: 'Glegoo', serif;		font-weight: 700;		}
 
 /* logo text multi line */
-#navbar-header #logo a div.logo-text-multiline {	text-align: left;		letter-spacing: -0.025em;		word-spacing: 0.25em;		color: #ffffff;					
-													float: left;		line-height: -0.1em;	font-family: 'Stardos Stencil', cursive;		font-weight: 700;		}		
+#navbar-header #logo a div.logo-text-multiline {	text-align: left;		letter-spacing: -0.025em;		word-spacing: 0.25em;		color: #666666;					
+													float: left;		line-height: -0.1em;	font-family: 'Glegoo', serif;		font-weight: 700;		}		
 
 /* Mobile Menu Toggle */
-#nav-toggle + label {	background-image: url('../image/icon/hamburger_menu.png');		background-repeat: no-repeat;	background-size: contain;	
+#nav-toggle + label {	background-image: url('../image/icon/ic_menu_grey_24px.svg');		background-repeat: no-repeat;	background-size: contain;	
 						float: right;		margin: 1em 1em 0 0;	width: 2.5em; 	height: 2.5em;	}
 
 
 /* Main menu navigation */
-#nav ul li a {		display: block;		color: #ffffff;			font-family: 'Glegoo', serif;			font-weight: 400;		text-align: center;			}
+#nav ul li a {		display: block;		color: #666666;			font-family: 'Glegoo', serif;			font-weight: 700;		text-align: center;			}
 
 /*#nav ul li a:hover {	background-color: #762030;		}*/
 
 /* Submenu navigation */
-#nav ul li ul li a { 	background-color: #C35063;		color: #ffffff;			}
+#nav ul li ul li a { 	background-image: url('../image/background/crimson_red_bg.png');		color: #ffffff;			}
 
 
 /*************************            Banner           **************************/
@@ -262,11 +262,11 @@ h3 {	font-size: 1.5em;	}
 	/* Header logo */
 	#navbar-header #logo {	height: 2em;	 width: auto;		padding: 0.0em;	 	margin: 1.3em 0 0 .5em;			float: left;	}
 
-	#navbar-header #logo a div.img {		display: none;	}
+	#navbar-header #logo a div.img {		display: block;		height: 2em;		width: 4em;	}
 
 	#navbar-header #logo a div.logo-text-multiline {		display: none;	}
 
-	#navbar-header #logo a div.logo-text {		display: block;		font-size: 1.2em;		padding: .3em 0 0 .5em;		}
+	#navbar-header #logo a div.logo-text {		display: block;		font-size: 1.2em;		padding: .3em 0 0 .5em;		margin: -1.5em 0 0 3em;		}
 
 	/* Mobile navigation toggle */
 	#navbar-header	#nav-toggle {	display: none;	}
@@ -379,13 +379,13 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 	#navbar-header {	height: 4em;	margin: 0;		padding: 0;		position: relative;		width: 100%;	float: left;	}
 		
 		/* Header logo */
-		#navbar-header #logo {	height: 2em;	 width: auto;		padding: 0.0em;	 	margin: 1.3em 0 0 .5em;			float: left;	}
+		#navbar-header #logo {	height: 2em;	 width: 20em;		padding: 0.0em;	 	margin: 1.3em 0 0 .5em;			float: left;	}
 
-		#navbar-header #logo a div.img {		display: none;	}
+		#navbar-header #logo a div.img {		display: block;		height: 2em;	width: 4em;	}
 
 		#navbar-header #logo a div.logo-text-multiline {		display: none;	}
 
-		#navbar-header #logo a div.logo-text {		display: block;		font-size: 1.2em;		padding: .3em 0 0 .5em;		}
+		#navbar-header #logo a div.logo-text {		display: block;		font-size: 1.2em;		padding: .3em 0 0 .5em;		margin: -1.5em 0 0 3em;	}
 
 		/* Mobile navigation toggle */
 		#navbar-header	#nav-toggle {	display: none;	}
@@ -401,12 +401,12 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 			
 		#nav ul li {		width: 100%;		line-height: 1.5em;		}
 
-		#nav ul li a {		width: 100%;	padding: .5em 0 .5em 0;			font-size: 1.1em;			}
+		#nav ul li a {		width: 100%;	padding: .5em 0 .5em 0;			font-size: 1em;			}
 
 		/* Submenu navigation */
 		#nav ul li ul {		display: none;		margin: 0;	}
 
-		#nav ul li ul li a { 	font-size: 1em;	}
+		#nav ul li ul li a { 	font-size: .9em;	}
 
 
 	/* Main Content */
@@ -502,13 +502,13 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 	#navbar-header {	height: 5em;	margin: 0;		padding: 0;		position: relative;		width: 10em;	float: left;	}
 
 		/* Header logo */		
-		#navbar-header #logo {		height: 4em;	width: 5em;		padding: .2em;		margin: .5em 0 0 1em;	float: left;	}
+		#navbar-header #logo {		height: 4em;	width: 15em;		padding: .2em;		margin: .5em 0 0 1em;	float: left;	}
 
 		#navbar-header #logo a div.img {		display: block;			height: calc(4em - 0.4em);		width: calc(4em - 0.4em);		}
 
 		#navbar-header #logo a div.logo-text {		display: none;		}
 
-		#navbar-header #logo a div.logo-text-multiline {		display: none;	}
+		#navbar-header #logo a div.logo-text-multiline {		display: block;		padding: .8em 0 0 .3em;		font-size: 1em;		margin: -3.5em 0 0 4em;	}
 
 		/* Mobile navigation toggle */
 		#nav-toggle {	display: none;	}
@@ -627,9 +627,9 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#navbar-header #logo a div.img {		display: block;		float: left;	height: calc(4em - 0.4em); 		width: calc(4em - 0.4em);	}
 
-		#navbar-header #logo a div.logo-text {		display: none;		}	
+		#navbar-header #logo a div.logo-text {		display: block;		padding: .8em 0 0 .3em;		font-size: 1.5em;		margin:0;	}	
 
-		#navbar-header #logo a div.logo-text-multiline {	display: block;			padding: 0em 0 0 0.3em;		font-size: 2em;		margin: 0;			}			
+		#navbar-header #logo a div.logo-text-multiline {	display: none;			padding: 0em 0 0 0.3em;		font-size: 2em;		margin: 0;			}			
 
 		/* Mobile navigation toggle */
 		#nav-toggle {	display: none;	}
@@ -750,7 +750,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#navbar-header #logo a div.img {		display: block;		float: left;	height: calc(4em - 0.4em); 		width: calc(4em - 0.4em);	}
 
-		#navbar-header #logo a div.logo-text {		display: block;		padding: 0.4em 0 0 0.3em;		font-size: 2.2em;		margin: 0;			}
+		#navbar-header #logo a div.logo-text {		display: block;		padding: 0.8em 0 0 0.3em;		font-size: 1.5em;		margin: 0;			}
 
 		#navbar-header #logo a div.logo-text-multiline {	display: none;		}			
 

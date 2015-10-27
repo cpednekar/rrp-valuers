@@ -20,7 +20,7 @@ header {	width: 100%;	overflow: visible;		position: fixed;	z-index: 9999;		backg
 
 #banner {		width: 100%;		position: relative;		float: left;		background-image: url('../image/background/cream_dust.png');		}
 
-#about-us {		width: 100%;		position: relative;		float: left;	height: 100%;		padding-bottom: 5em;	}
+#about-us {		width: 100%;		position: relative;		float: left;	height: 100%;		padding-bottom: 7em;	}
 
 #the-team {		width: 100%;		position: relative;		float: left;	height: 100%;		padding-bottom: 5em;			}
 
@@ -53,7 +53,8 @@ p {		position: relative;			padding: 0 2em;			margin: 2.5em auto;		font-family: '
 div.img {		background-size: contain;		background-position: center center;			background-repeat: no-repeat;		}
 
 
-hr {	border: none;		height: .063em;		width: 100%;		background-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(102, 102, 102, .75), rgba(0, 0, 0, 0));		}
+hr {	border: none;		height: .063em;		width: 100%;			clear: both;
+		background-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(102, 102, 102, .75), rgba(0, 0, 0, 0));		}
 
 
 
@@ -114,36 +115,32 @@ hr {	border: none;		height: .063em;		width: 100%;		background-image: linear-grad
 
 #the-team div.team-container {		width: 90%;		margin: 0 auto;		}
 
-#the-team div.profile-sm {		height: auto;		padding: 2.5em 0 0 0;			}
+#the-team div[class*='btn-'] {		position: relative;		width: 2em;		height: 2em;		display: inline-block;		}
 
-#the-team div.profile-sm div.img, 	div.profile-detail div.img 
-								{		border-radius: 50%;		margin: 0 auto;		}
+#the-team div.btn-next {	left: 10em;			}
 
-#the-team div.profile-sm h4	, div.profile-detail h4
-								{		letter-spacing: 0.005em;		word-spacing: .1em;			padding: 1em auto;		color: #373737; 	
-										font-family: 'Glegoo', serif;		font-weight: 700;		line-height: 2em;				margin-top: 1em;			}
+#the-team div.btn-prev	{	left: -10em;	}
 
-#the-team div.profile-sm div.qual {	display: none	}
+#the-team #member-belt {		width: 100%;			margin: 2em auto;		}
 
-#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5
+#the-team div[class*='memb-id'] {		float: left;			padding: 1em auto;	}
+
+#the-team div[class*='memb-detail'] {	float: left;		padding: 0 auto;		}
+
+#the-team div.memb-id div.img {			margin: 0 auto;		}
+
+#the-team div.memb-detail h4
+						{		letter-spacing: 0.005em;		word-spacing: .1em;			padding: 1em auto;		color: #373737; 	
+								font-family: 'Glegoo', serif;		font-weight: 700;		line-height: 1em;				margin: 1em auto 0 auto; 		}
+
+
+#the-team div.memb-detail div.qual,	div.memb-detail h5
 							{		letter-spacing: -0.02em;		word-spacing: .1em;			padding: 1em auto ;	
 									font-family: 'Glegoo', serif;		font-weight: 700;		line-height: 1.5em;			color: #9f9f9f;
-									margin: 0 1.5em 0 1.5em;  	}	
+									margin: 1em auto 0 auto; 	}	
 
-
-#the-team div.profile-detail p {	word-spacing: .1em;		color: #373737;		line-height: 2em;		display: none;		padding: 1em 2em;		margin: 0 auto;
-									font-family: 'Glegoo', serif;		font-weight: 700;			text-align: justify;		}
-
-#the-team div.profile-detail {		display: block;		padding-top: 2.5em;	   transform-style: preserve-3d; 		-webkit-transition: -webkit-transform 2s;
-									-moz-transition: -moz-transform 2s;		-ms-transition: -ms-transform 2s;		transition: transform 2s;		}
-
-/* Display main container but hide all inner elements to avoid using empty space */
-#the-team div.profile-detail div.img {		display: none;	}
-#the-team div.profile-detail h4 {		display: none;	}
-#the-team div.profile-detail div.qual {		display: none;	}
-#the-team div.profile-detail p[id^='detail-'] {		display: none;	}
-
-#the-team div.profile-detail.display {		transform: rotate3d(0, 1, 0, 360deg);	}
+#the-team div[class*='memb-detail'] p {		word-spacing: .1em;		color: #373737;		line-height: 2em;		display: block;		padding: 1em .5em;		margin: 0 auto;
+											font-family: 'Glegoo', serif;		font-weight: 700;			text-align: justify;	}
 
 
 #the-team #rrp div.img {	background-image: url('../image/face/face-rrp.jpg'); 	}
@@ -151,12 +148,20 @@ hr {	border: none;		height: .063em;		width: 100%;		background-image: linear-grad
 #the-team #da div.img {		background-image: url('../image/face/face-da.jpg'); 	}
 
 
+#the-team div.btn-next {	background-image: url('../image/icon/ic_next_button.svg');	}
+#the-team div.btn-prev {	background-image: url('../image/icon/ic_next_button.svg');		-webkit-transform: scaleX(-1);		-moz-transform: scaleX(-1);
+							-o-transform: scaleX(-1);		-ms-transform: scaleX(-1);		transform: scaleX(-1);		}
+
+/* Display only active member details/ section */
+#the-team div.team-memb {	display: none;	}
+
+
 /**********************      Services        *******************************/
 
 
 #services h4 {		word-spacing: .1em;		font-family: 'Glegoo', serif;		font-weight: 700;			line-height: 1.5em;			color: black;		
 					text-transform: uppercase;				width: auto;			text-align: left;				text-decoration: underline;		
-					padding: .5em 2em;		margin-top: 0 auto;	} 
+					padding: .5em 2em;		margin-top: 0 auto;			} 
 
 
 #services div.immp {	padding: 0 auto;		}
@@ -324,11 +329,19 @@ h3 {	font-size: 1.5em;	}
 	/* The Team */
 	#the-team {		padding-top: 4em;	}
 
-	#the-team div.profile-sm div.img, 	div.profile-detail div.img {		width: 10em;		height: 10em;		}
+	#the-team div[class*='btn-'] {		top: 10em;	}
 
-	#the-team div.profile-sm h4	, div.profile-detail h4 {		font-size: .9em;	}
+	#the-team div.memb-id {		width: 100%;	height: auto;	clear: both;	}
 
-	#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5 {		font-size: .7em;	}
+	#the-team div.memb-id div.img {		width: 10em;		height: 10em;			}
+
+	#the-team div.memb-detail {		width: 100%;		height: auto;		clear: both;	}
+
+	#the-team div.memb-detail h4 {		font-size: .9em;	}
+
+	#the-team div.memb-detail div.qual, #the-team h5 {		font-size: .7em;	}
+
+
 
 	/* Services */
 	#services {		padding-top: 4em;		}
@@ -449,11 +462,19 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 		/* The Team */
 		#the-team {		padding-top: 4em;	}
 
-		#the-team div.profile-sm div.img, 	div.profile-detail div.img {		width: 15em;		height: 15em;		}
+		#the-team div[class*='btn-'] {		top: 10em;		width: 3em;		height: 3em;	}
 
-		#the-team div.profile-sm h4	, div.profile-detail h4 {		font-size: 1.1em;	}
+		#the-team div.btn-next {		left: 20em;		}
 
-		#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5 {		font-size: .9em;	}
+		#the-team div.btn-prev {		left: -20em;		}
+
+		#the-team div.memb-id div.img {		width: 15em;		height: 15em;		}
+
+		#the-team div.memb-detail h4 {		font-size: 1.2em;	}
+
+		#the-team div.memb-detail div.qual, #the-team h5 {		font-size: 1em;	}
+
+		#the-team p {	font-size: 1.1em;	}
 
 
 		/* Services */
@@ -580,11 +601,19 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 		/* The Team */
 		#the-team {		padding-top: 5em;	}
 
-		#the-team div.profile-sm div.img, 	div.profile-detail div.img {		width: 10em;		height: 10em;		}
+		#the-team div[class*='btn-'] {		top: 10em;		width: 3em;		height: 3em;	}
 
-		#the-team div.profile-sm h4	, div.profile-detail h4 {		font-size: 1.1em;	}
+		#the-team div.btn-next {		left: 20em;	}
 
-		#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5 {		font-size: .9em;	}
+		#the-team div.btn-prev {		left: -20em;	}
+
+		#the-team div.memb-id div.img {		width: 15em;		height: 15em;		}
+
+		#the-team div.memb-detail h4 {		font-size: 1.1em;	}
+
+		#the-team div.memb-detail div.qual, #the-team h5 {		font-size: .9em;	}
+
+		#the-team p {	font-size: .9em;	}
 
 
 		/* Services */
@@ -708,11 +737,19 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 		/* The Team */
 		#the-team {		padding-top: 5em;	}
 
-		#the-team div.profile-sm div.img, 	div.profile-detail div.img {		width: 15em;		height: 15em;		}
+		#the-team div[class*='btn-'] {		top: 10em;		width: 3em;		height: 3em;	}
 
-		#the-team div.profile-sm h4	, div.profile-detail h4 {		font-size: 1.1em;	}
+		#the-team div.btn-next {		left: 25em;	}
 
-		#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5 {		font-size: .9em;	}
+		#the-team div.btn-prev {		left: -25em;	}
+
+		#the-team div.memb-id div.img {		width: 15em;		height: 15em;		}
+
+		#the-team div.memb-detail h4 {		font-size: 1.1em;	}
+
+		#the-team div.memb-detail div.qual, #the-team h5 {		font-size: 1em;	}
+
+		#the-team p {	font-size: .9em;	}
 
 
 		/* Services */
@@ -836,11 +873,20 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 		/* The Team */
 		#the-team {		padding-top: 5em;	}
 
-		#the-team div.profile-sm div.img, 	div.profile-detail div.img {		width: 15em;		height: 15em;		}
-	
-		#the-team div.profile-sm h4	, div.profile-detail h4 {		font-size: 1.1em;	}
+		#the-team div[class*='btn-'] {		top: 10em;		width: 3em;		height: 3em;	}
 
-		#the-team div.profile-sm div.qual, div.profile-detail div.qual,  h5 {		font-size: .9em;	}
+		#the-team div.btn-next {		left: 30em;	}
+
+		#the-team div.btn-prev {		left: -30em;	}
+
+		#the-team div.memb-id div.img {		width: 15em;		height: 15em;		}
+
+		#the-team div.memb-detail h4 {		font-size: 1.1em;	}
+
+		#the-team div.memb-detail div.qual, #the-team h5 {		font-size: .9em;	}
+
+		#the-team p {	font-size: .9em;	}
+	
 
 
 		/* Services */

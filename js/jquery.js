@@ -2,60 +2,74 @@
 // Created on - 27.09.2015
 
 
+// Perform initialization tasks on page load/ reload
+$(document).ready(function(){
+	// Display only active team member details
+	$('#the-team div.team-memb').each(function(){
+		if( $(this).hasClass('active') ){
+			$(this).css('display', 'block');
+		}
+	});
 
+	// Page scroll to top
+	$('html, body').animate({
+	    scrollTop: $( '#banner' ).offset().top
+	}, 500);
+
+});
 
 
 // Show/ Hide detailed info when clicked on face photo
-$('#the-team div.img').on('click', function(){
-	// If user clicked on profile small photo
-	if( $(this).parent().hasClass('profile-sm') ){
-		// Hide small profiles
-		$('#the-team div.profile-sm').css('display', 'none');
+// $('#the-team div.img').on('click', function(){
+// 	// If user clicked on profile small photo
+// 	if( $(this).parent().hasClass('profile-sm') ){
+// 		// Hide small profiles
+// 		$('#the-team div.profile-sm').css('display', 'none');
 
-		// Set the detailed profile image, name and qualifications
-		$('#the-team div.profile-detail div.img').css('background-image', $(this).css('background-image'));
-		$('#the-team div.profile-detail h4').text( $(this).parent().find('h4').text() );
-		$('#the-team div.profile-detail div.qual').html( $(this).parent().find('div.qual').html() );
-		var parentId = $(this).parent().attr('id');
-		// First display all elements which are hidden in css to save space
-		$('#the-team div.profile-detail div.img').css('display', 'block');
-		$('#the-team div.profile-detail h4').css('display', 'block');
-		$('#the-team div.profile-detail div.qual').css('display', 'block');
-		 // First display all paragraphs. Then hide which are not required
-		$('#the-team div.profile-detail p').css('display', 'block');
-		if(	parentId == 'vrp' ){
-			$('#the-team div.profile-detail p:not(.detail-vrp)').css('display', 'none');
-		}
-		else if ( parentId == 'rrp' ){
-			$('#the-team div.profile-detail p:not(.detail-rrp)').css('display', 'none');
-		}
-		else if ( parentId == 'da' ){
-			$('#the-team div.profile-detail p:not(.detail-da)').css('display', 'none');
-		}
+// 		// Set the detailed profile image, name and qualifications
+// 		$('#the-team div.profile-detail div.img').css('background-image', $(this).css('background-image'));
+// 		$('#the-team div.profile-detail h4').text( $(this).parent().find('h4').text() );
+// 		$('#the-team div.profile-detail div.qual').html( $(this).parent().find('div.qual').html() );
+// 		var parentId = $(this).parent().attr('id');
+// 		// First display all elements which are hidden in css to save space
+// 		$('#the-team div.profile-detail div.img').css('display', 'block');
+// 		$('#the-team div.profile-detail h4').css('display', 'block');
+// 		$('#the-team div.profile-detail div.qual').css('display', 'block');
+// 		 // First display all paragraphs. Then hide which are not required
+// 		$('#the-team div.profile-detail p').css('display', 'block');
+// 		if(	parentId == 'vrp' ){
+// 			$('#the-team div.profile-detail p:not(.detail-vrp)').css('display', 'none');
+// 		}
+// 		else if ( parentId == 'rrp' ){
+// 			$('#the-team div.profile-detail p:not(.detail-rrp)').css('display', 'none');
+// 		}
+// 		else if ( parentId == 'da' ){
+// 			$('#the-team div.profile-detail p:not(.detail-da)').css('display', 'none');
+// 		}
 
-		// Display detailed profile
-		$('#the-team div.profile-detail').toggleClass('display');
-		// Scroll to top of team container section to be viewed properly on mobiles
-		$('html, body').animate( { scrollTop: $('div.team-container').offset().top }, 500);
+// 		// Display detailed profile
+// 		$('#the-team div.profile-detail').toggleClass('display');
+// 		// Scroll to top of team container section to be viewed properly on mobiles
+// 		$('html, body').animate( { scrollTop: $('div.team-container').offset().top }, 500);
 
-	}
-	else if ( $(this).parent().hasClass('profile-detail') ){
-		// Toggle display class
-		$('#the-team div.profile-detail').toggleClass('display');
+// 	}
+// 	else if ( $(this).parent().hasClass('profile-detail') ){
+// 		// Toggle display class
+// 		$('#the-team div.profile-detail').toggleClass('display');
 
-		// Hide everthing in detail profile
-		$('#the-team div.profile-detail div.img').css('display', 'none');
-		$('#the-team div.profile-detail h4').css('display', 'none');
-		$('#the-team div.profile-detail div.qual').css('display', 'none');
-		$('#the-team div.profile-detail p').css('display', 'none');
+// 		// Hide everthing in detail profile
+// 		$('#the-team div.profile-detail div.img').css('display', 'none');
+// 		$('#the-team div.profile-detail h4').css('display', 'none');
+// 		$('#the-team div.profile-detail div.qual').css('display', 'none');
+// 		$('#the-team div.profile-detail p').css('display', 'none');
 
-		// Display small profiles
-		$('#the-team div.profile-sm').css('display', 'block');
-		// Scroll to top of 'the-team' section
-		$('html, body').animate( { scrollTop: $('#the-team').offset().top }, 500); 
-	}
+// 		// Display small profiles
+// 		$('#the-team div.profile-sm').css('display', 'block');
+// 		// Scroll to top of 'the-team' section
+// 		$('html, body').animate( { scrollTop: $('#the-team').offset().top }, 500); 
+// 	}
 		
-});
+// });
 
 
 
@@ -64,6 +78,59 @@ $('#the-team div.img').on('click', function(){
 // 	// Display <span> immediately following the image
 // 	( $(this).find('span') ).toggleClass('show-detail');
 // });
+
+
+// Change to next team member on NEXT click
+$( '#the-team div.btn-next' ).click(function(){
+	// Check if next item in member-belt exists
+	$('#the-team div.team-memb').each(function(){
+		if ( $(this).is(':visible') ){
+				if( $(this).next().length != 0 ){
+					$(this).fadeOut( 100, function(){
+						$(this).removeClass('active');
+						$(this).next().addClass('active');
+						$(this).next().fadeIn();
+					});
+				}
+				else{
+						$(this).fadeOut( 100, function(){
+							$(this).removeClass('active');
+							$('#the-team div.team-memb:first').addClass('active');
+							$('#the-team div.team-memb:first').fadeIn();
+						});
+				}	
+		}
+			
+	});
+	
+});
+
+
+
+// Change to previous team member on PREV click
+$( '#the-team div.btn-prev' ).click(function(){
+	// Check if prev item in member-belt exists
+	$('#the-team div.team-memb').each(function(){
+		if ( $(this).is(':visible') ){
+				if( $(this).prev().length != 0 ){
+					$(this).fadeOut( 100, function(){
+						$(this).removeClass('active');
+						$(this).prev().addClass('active');
+						$(this).prev().fadeIn();
+					});
+				}
+				else{
+						$(this).fadeOut( 100, function(){
+							$(this).removeClass('active');
+							$('#the-team div.team-memb:last').addClass('active');
+							$('#the-team div.team-memb:last').fadeIn();
+						});
+				}	
+		}
+			
+	});
+	
+});
 
 
 

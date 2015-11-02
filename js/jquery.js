@@ -16,7 +16,9 @@ $(document).ready(function(){
 	    scrollTop: $( '#banner' ).offset().top
 	}, 500);
 
+
 });
+
 
 
 // Show/ Hide detailed info when clicked on face photo

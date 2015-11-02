@@ -91,8 +91,8 @@ hr {	border: none;		height: .063em;		width: 100%;			clear: both;
 
 #banner #banner-logo div.img {		background-image: url('../image/logo/rrp-logo.jpg');		margin: 0 auto;		}
 
-#banner #banner-text {		letter-spacing: -0.01em;		word-spacing: 0.25em;		position: relative;			line-height: 1.5em;			color: #b62e46;	
-							font-family: 'Glegoo', serif;			font-weight: 700; 		text-shadow: 0 0 0 #00152A;			text-transform: uppercase;			}
+#banner #banner-text {		letter-spacing: -0.01em;		word-spacing: 0.25em;		position: relative;			line-height: 1.5em;			color: #666666;	
+							font-family: 'Glegoo', serif;			font-weight: 700; 		text-shadow: 0 0 0 #999999;			text-transform: uppercase;			}
 
 
 /*************************         About Us       ****************************/
@@ -127,7 +127,7 @@ hr {	border: none;		height: .063em;		width: 100%;			clear: both;
 
 #the-team div[class*='memb-detail'] {	float: left;		padding: 0 auto;		}
 
-#the-team div.memb-id div.img {			margin: 0 auto;		}
+#the-team div.memb-id div.img {			margin: 0 auto;			box-shadow: .5em .5em 1em #666666;	}
 
 #the-team div.memb-detail h4
 						{		letter-spacing: 0.005em;		word-spacing: .1em;			padding: 1em auto;		color: #373737; 	
@@ -158,20 +158,34 @@ hr {	border: none;		height: .063em;		width: 100%;			clear: both;
 
 /**********************      Services        *******************************/
 
+#services div.main-services {		width: 90%;			height: 3em;			clear: both;		margin: 0 0 1em 0;
+									padding: 2em 0 0 0;			word-wrap: break-word;	}
+
 
 #services h4 {		word-spacing: .1em;		font-family: 'Glegoo', serif;		font-weight: 700;			line-height: 1.5em;			color: black;		
 					text-transform: uppercase;				width: auto;			text-align: left;				text-decoration: underline;		
 					padding: .5em 2em;		margin-top: 0 auto;			} 
 
+#services div.main-services h4:first-child {		float: left;		padding: 0 .5em 0 1.5em;		margin: 0 auto;		text-decoration: none;	}
+#services div.main-services h4:last-child {		float: left;		padding: 0;			margin: 0;						width: inherit;	}
+
+#services div.main-services + p {		margin: 1.5em auto .5em auto;		padding: 1em 4em 0 4em;			clear: both;		}
+
+/*h4 {	counter-increment: service_num;	}
+
+#services h4:before {		content: counter(service_num) '.';		padding: 0 .5em 0 0;		font-size: 1.1em;		text-decoration: none;		
+							display: inline-block;			}*/
 
 #services div.immp {	padding: 0 auto;		}
 
 #services h5 {		letter-spacing: 0.01em;			word-spacing: .2em;		font-family: 'Glegoo', serif;		font-weight: 700;		width: 100%;		margin: 0;
 					line-height: 1em;		color: black;			text-transform: uppercase;			padding: .5em 2em;		}
 
-#services div.valuation-services {		width: 90%; 	margin: 0  auto;			}
+#services div.valuation-services {		width: 90%; 	margin: 1em auto 0 auto;			}
 
 #services div.valuation-services h5::first-letter  {		text-transform: lowercase;		}
+
+#services div.valuation-services h5:before {		content: '\25CF';		font-size: 1.2em;		padding-right: .5em;		}
 
 
 
@@ -217,12 +231,12 @@ hr {	border: none;		height: .063em;		width: 100%;			clear: both;
 
 #projects span {	display: block;		width: 100%;		height: 3.4em;		position: absolute;		top: 65%;		z-index: 1;
 					margin: 0em 1em;			-webkit-transition: top .5s;			-moz-transition: top .5s;			transition: top .5s;		
-					background-color: maroon;		opacity: .5;			padding: .5em 0em;		}
+					background-color: #666666;		opacity: .75;			padding: .5em 0em;		}
 
 #projects span h4 {		word-spacing: .2em;		position: relative;		padding: 0;		font-family: 'Glegoo', serif;		font-weight: 400;		
 						line-height: 1em; 		}
 
-#projects span h4, #projects span h5 {		color: #ffffff;		}
+#projects span h4, #projects span h5 {		color: #ffffff;				}
 
 
 
@@ -305,7 +319,7 @@ h3 {	font-size: 1.5em;	}
 
 	#banner #banner-logo div.img {		width: 15em;			height: 15em;		}
 
-	#banner #banner-text {		padding: 4em auto 0 auto;			font-size: 1.5em;			margin: 0 auto;		}
+	#banner #banner-text {		padding: 4em auto 0 auto;			font-size: 1.5em;			margin: 1em auto 0 auto;		}
 
 	/* About us */
 	#about-us {		padding-top: 4em;		}
@@ -320,7 +334,7 @@ h3 {	font-size: 1.5em;	}
 
 	#about-us [id$='-voi'] div.img {		width: 80%;		height: 80%;		}
 
-	#about-us [id$='-ca'] div.img {		width: 80%;		height: 80%;		}
+	#about-us [id$='-ca'] div.img {		width: 60%;		height: 80%;		}
 
 	#about-us [id^='memb-'] span {	padding: .5em 1em;		}
 
@@ -346,9 +360,11 @@ h3 {	font-size: 1.5em;	}
 	/* Services */
 	#services {		padding-top: 4em;		}
 
-	#services h4 {		font-size: 1.3em;			} 
+	#services div.valuation-services {		padding: 2.5em 0 0 0;	}
 
-	#services h4:nth-of-type(2) {		margin-top: 10em;		}
+	#services div.main-services h4:last-child {		width: 75%;	}
+
+	#services h4 {		font-size: 1em;			} 
 
 	#services h5 {		font-size: .8em;			}
 
@@ -438,7 +454,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#banner #banner-logo div.img {		width: 20em;			height: 20em;		}
 
-		#banner #banner-text {		padding: 4em auto 0 auto;			font-size: 2.5em;			margin: 0 auto;	}
+		#banner #banner-text {		padding: 4em auto 0 auto;			font-size: 2em;			margin: 1em auto 0 auto;	}
 
 		/* About us */
 		#about-us {		padding-top: 4em;		}
@@ -453,7 +469,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#about-us [id$='-voi'] div.img {		width: 80%;		height: 80%;		}
 
-		#about-us [id$='-ca'] div.img {		width: 80%;		height: 80%;		}
+		#about-us [id$='-ca'] div.img {		width: 60%;		height: 80%;		}
 
 		#about-us [id^='memb-'] span {	padding: .5em 1em;		}
 
@@ -480,11 +496,15 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 		/* Services */
 		#services {		padding-top: 4em;		}
 
-		#services h4 {		font-size: 1.5em;			} 
+		#services div.main-services h4:last-child {		width: 90%;	}
 
-		#services h4:nth-of-type(2) {		margin-top: 12.5em;		}
+		#services div.main-services + p {	font-size: .9em;	}
 
-		#services h5 {		font-size: 1em;			}
+		#services div.valuation-services {		padding: 2.5em 0 0 0;		}
+
+		#services h4 {		font-size: 1.1em;			} 
+
+		#services h5 {		font-size: .9em;			}
 
 		#services div.immp:nth-of-type(odd)  {		text-align: justify;	}
 
@@ -577,7 +597,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#banner #banner-logo div.img {		width: 20em;			height: 20em;		}
 
-		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 2.5em;			margin: 0 auto;		}
+		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 2em;			margin: 1em auto 0 auto;		}
 
 		/* About us */
 		#about-us {		padding-top: 5em;	}
@@ -592,7 +612,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#about-us [id$='-voi'] div.img {		width: 100%;		height: 100%;		}
 
-		#about-us [id$='-ca'] div.img {		width: 100%;		height: 100%;		}
+		#about-us [id$='-ca'] div.img {		width: 70%;		height: 100%;		}
 
 		#about-us [id^='memb-'] span {	padding: 1em 1em;	}
 
@@ -619,9 +639,11 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 		/* Services */
 		#services {		padding-top: 5em;		}
 
-		#services h4 {		font-size: 1.5em;			} 
+		#services div.main-services h4:last-child {		width: 90%;	}
 
-		#services h4:nth-of-type(2) {		margin-top: 7em;		}
+		#services div.valuation-services {		padding: 3.5em 0 0 0;		}
+
+		#services h4 {		font-size: 1.4em;			} 
 
 		#services h5 {		font-size: 1em;			}
 
@@ -713,7 +735,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#banner #banner-logo div.img{		width: 20em;		height: 20em;		}
 
-		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 3em;			margin: 0 auto;		}
+		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 2em;			margin: 1em auto 0 auto;		}
 
 		/* About us */
 		#about-us {		padding-top: 5em;	}
@@ -728,7 +750,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#about-us [id$='-voi'] div.img {		width: 80%;		height: 80%;		}
 
-		#about-us [id$='-ca'] div.img {		width: 80%;		height: 80%;		}
+		#about-us [id$='-ca'] div.img {		width: 60%;		height: 80%;		}
 
 		#about-us [id^='memb-'] span {	padding: 1em 1em;	}
 
@@ -755,9 +777,11 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 		/* Services */
 		#services {		padding-top: 5em;		}
 
-		#services h4 {		font-size: 1.5em;			} 
+		#services div.main-services h4:last-child {		width: 90%;	}
 
-		#services h4:nth-of-type(2) {		margin-top: 6em;		}
+		#services div.valuation-services {		padding: 1.5em 0 0 0;		}
+
+		#services h4 {		font-size: 1.5em;			} 
 
 		#services h5 {		font-size: 1em;			} 
 
@@ -849,7 +873,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#banner #banner-logo div.img {		width: 20em;		height: 20em;	}
 
-		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 3em;			margin: 0 auto;			}
+		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 2em;			margin: 1em auto 0 auto;			}
 
 		/* About us */
 		#about-us {		padding-top: 5em;	}
@@ -864,7 +888,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#about-us [id$='-voi'] div.img {		width: 80%;		height: 80%;		}
 
-		#about-us [id$='-ca'] div.img {		width: 80%;		height: 80%;		}
+		#about-us [id$='-ca'] div.img {		width: 60%;		height: 80%;		}
 
 		#about-us [id^='memb-'] span {	padding: 1em 1em;	}
 
@@ -892,9 +916,11 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 		/* Services */
 		#services {		padding-top: 5em;		}
 
-		#services h4 {		font-size: 1.5em;		} 
+		#services div.main-services h4:last-child {		width: 90%;	}
 
-		#services h4:nth-of-type(2) {		margin-top: 6em;		}
+		#services div.valuation-services {		padding: 1.5em 0 0 0;		}
+
+		#services h4 {		font-size: 1.5em;		} 
 
 		#services h5 {		font-size: 1em;			} 
 

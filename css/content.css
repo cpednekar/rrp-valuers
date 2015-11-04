@@ -91,8 +91,20 @@ hr {	border: none;		height: .063em;		width: 100%;			clear: both;
 
 #banner #banner-logo div.img {		background-image: url('../image/logo/rrp-logo.jpg');		margin: 0 auto;		}
 
-#banner #banner-text {		letter-spacing: -0.01em;		word-spacing: 0.25em;		position: relative;			line-height: 1.5em;			color: #666666;	
-							font-family: 'Glegoo', serif;			font-weight: 700; 		text-shadow: 0 0 0 #999999;			text-transform: uppercase;			}
+#banner #banner-company-profile {	margin: -2em auto 0 auto;		}
+
+#banner #banner-company-profile h4 , h5 {	margin: .25em auto;			opacity: .75;		}
+
+#banner #banner-company-profile hr {	background-color: #ff0000;	}
+
+#banner #banner-text,
+#banner-company-profile
+  {		letter-spacing: -0.01em;		word-spacing: 0.25em;		position: relative;			line-height: 1.5em;			color: #666666;	
+		font-family: 'Glegoo', serif;			font-weight: 700; 		text-shadow: 0 0 0 #999999;			padding: 0 1em;			}
+
+#banner #banner-text h1:first-child:before {	content: '\201C';		opacity: .5;		color: #666666;		}
+
+#banner #banner-text h1:first-child:after {	content: '\201D';		opacity: .5;		color: #666666;		}
 
 
 /*************************         About Us       ****************************/
@@ -203,7 +215,7 @@ hr {	border: none;		height: .063em;		width: 100%;			clear: both;
 
 #clientele div.client-container {	width: 80%;		margin: 0 auto;		}
 
-#clientele div.img {	margin: .5em 2em;		width: 90%;		height: 10em;	}
+#clientele div.img {	margin: .5em auto;		width: 90%;		height: 10em;	}
 
 .corp-client {		width: 90%;		margin: 0 auto;		}
 
@@ -211,11 +223,14 @@ hr {	border: none;		height: .063em;		width: 100%;			clear: both;
 /***************************      Projects       *********************************/
 
 .project-container div.proj-hotel-sea-rock div.img {		background-image: url('../image/project/proj-hotelsearock.jpg');		}
-.project-container div.proj-hotel-taj-president div.img {		background-image: url('../image/project/proj-hoteltajpresident.jpg');		}
+.project-container div.proj-hotel-taj-lands-end div.img {		background-image: url('../image/project/proj-hoteltajlandsend.jpg');		}
 .project-container div.proj-beach-land div.img {		background-image: url('../image/project/proj-beachland.jpg');		}
 .project-container div.proj-hotel-taj-mahal div.img {		background-image: url('../image/project/proj-hoteltajmahal.jpg');		}
 .project-container div.proj-taj-sats-cat div.img {		background-image: url('../image/project/proj-tajsatscat.jpg');		}
 .project-container div.proj-kruger-india div.img {		background-image: url('../image/project/proj-krugerindia.jpg');		}
+.project-container div.proj-eco-tourist-beach-resort div.img {		background-image: url('../image/project/proj-ecotouristbeachresortalibaug.jpg');		}
+.project-container div.proj-taj-president-interior div.img {		background-image: url('../image/project/proj-hoteltajpresidentint.jpg');		}
+
 
 
 #projects div.project-container {		width: 80%;			margin: 0 auto;		}
@@ -243,7 +258,9 @@ hr {	border: none;		height: .063em;		width: 100%;			clear: both;
 /*********************************         Footer          *************************************/
 
 
-footer div[id*='icon-']	{	width: 2em;		height: 2em;		float: left;		margin: .5em 0;		}
+footer div[id*='icon-']	{	width: 2em;		height: 2em;	float: left;		margin: .5em 0;		}
+
+footer div.social-links div[id*='icon-'] {		float: none;		width: 1.8em;		height: 1.8em;	}
 
 footer div[id*='icon-'] + p {		float: left;		text-align: left;		margin: .5em 0;		}
 
@@ -252,19 +269,34 @@ footer div[id*='icon-'] + p {		float: left;		text-align: left;		margin: .5em 0;	
 #icon-smartphone {	background-image: url('../image/icon/ic_smartphone_white_24px.svg');		}
 #icon-email {	background-image: url('../image/icon/ic_email_white_24px.svg');		}
 
-footer div.contact-details {		margin: 0 auto;			padding: 0 1.5em;		width: 100%;		}
+footer h3 {	float: left;		margin: 2em auto 1em 1em;			}
 
+footer div.contact-details {		margin: 0 auto;			padding: 0 1.5em;		width: 100%;		clear: both;	}
 
 #icon-facebook {	background-image: url('../image/icon/ic-facebook.svg');				}
 #icon-twitter {	background-image: url('../image/icon/ic-twitter.svg');		}
 #icon-linkedin {	background-image: url('../image/icon/ic-linkedin.svg');		}
 #icon-googleplus {	background-image: url('../image/icon/ic-googleplus.svg');		}
 
-footer div.social-links {		margin: 0 auto;			padding: 0 1.5em;			width: 100%;		}
+footer div.social-links {		margin: 0 auto;			padding: 0 0 0 1.5em;			width: 100%;			clear: both;	}
+
+footer div.social-links ul {	padding-bottom: 4em;	margin: 0 auto;			}
+
+footer div.social-links ul li {		float: left;		width: 33%;		}
+
+footer div.social-links ul li a {	display: block;		width: 1.8em;		height: 1.8em;		margin: 0;		}
 
 #icon-place {	background-image: url('../image/icon/ic-place.svg');		}
 
-footer div.other-links {		margin: 0 auto;			padding: 0 1.5em;		width: 100%;		}
+footer div.other-links {		margin: 0 auto;			padding: 0 1.5em;		width: 100%;		clear: both;	}
+
+footer #developer-detail {		margin: 1em auto 0 auto;			height: .2em;	}
+
+footer #developer-detail h5 {		letter-spacing: 0.01em;			word-spacing: .2em;		font-family: 'Glegoo', serif;		
+									font-weight: 700;			line-height: 1em;		color: #666666;			}
+
+
+/*footer div.other-links iframe {		width: 100%;		height: auto;	}*/
 
 /* End of Common Styles */
 
@@ -319,7 +351,13 @@ h3 {	font-size: 1.5em;	}
 
 	#banner #banner-logo div.img {		width: 15em;			height: 15em;		}
 
-	#banner #banner-text {		padding: 4em auto 0 auto;			font-size: 1.5em;			margin: 1em auto 0 auto;		}
+	#banner #banner-company-profile { 	width: 17em;	}
+
+	#banner #banner-company-profile h4 {	font-size: .9em;		}
+
+	#banner #banner-company-profile h5 {	font-size: .7em;		}
+
+	#banner #banner-text {		padding: 4em auto 0 auto;			font-size: 1em;			margin: 2.5em auto 0 auto;		}
 
 	/* About us */
 	#about-us {		padding-top: 4em;		}
@@ -393,6 +431,10 @@ h3 {	font-size: 1.5em;	}
 /* Footer */
 footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
+footer div.other-links {	height: 25em;	}
+
+footer #developer-detail h5 {		font-size: .65em;	}
+
 
 /* End of Mobile First */
 
@@ -454,7 +496,13 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#banner #banner-logo div.img {		width: 20em;			height: 20em;		}
 
-		#banner #banner-text {		padding: 4em auto 0 auto;			font-size: 2em;			margin: 1em auto 0 auto;	}
+		#banner #banner-company-profile { 	width: 20em;	}
+
+		#banner #banner-company-profile h4 {	font-size: 1em;		}
+
+		#banner #banner-company-profile h5 {	font-size: .8em;		}
+
+		#banner #banner-text {		padding: 4em auto 0 auto;			font-size: 1.4em;			margin: 2.5em auto 0 auto;	}
 
 		/* About us */
 		#about-us {		padding-top: 4em;		}
@@ -532,6 +580,10 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 	/* Footer */
 	footer div[id*='icon-'] + p {		font-size: 1.2em;		}
 
+	footer div.other-links {	height: 25em;	}
+
+	footer #developer-detail h5 {		font-size: .65em;	}
+
 
 }
 
@@ -597,7 +649,13 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#banner #banner-logo div.img {		width: 20em;			height: 20em;		}
 
-		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 2em;			margin: 1em auto 0 auto;		}
+		#banner #banner-company-profile { 	width: 22em;	}
+
+		#banner #banner-company-profile h4 {	font-size: 1.1em;		}
+
+		#banner #banner-company-profile h5 {	font-size: .9em;		}
+
+		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 1.6em;			margin: 2.5em auto 0 auto;		}
 
 		/* About us */
 		#about-us {		padding-top: 5em;	}
@@ -662,7 +720,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#projects span h4 {		font-size: 1em;			margin: 0 auto;		}
 
-		#projects span h5 {		font-size: .7em;		color: #ffffff;			}
+		#projects span h5 {		font-size: .8em;		color: #ffffff;			}
 
 
 		/* Clientele */
@@ -672,7 +730,9 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 	/* Footer */
 	footer div[id*='icon-'] + p {		font-size: .8em;		}
 
+	footer div.other-links {	height: 25.575em;	}
 
+	footer #developer-detail h5 {		font-size: .7em;	}
 	 
 
 
@@ -735,7 +795,13 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#banner #banner-logo div.img{		width: 20em;		height: 20em;		}
 
-		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 2em;			margin: 1em auto 0 auto;		}
+		#banner #banner-company-profile { 	width: 22em;	}
+
+		#banner #banner-company-profile h4 {	font-size: 1.1em;		}
+
+		#banner #banner-company-profile h5 {	font-size: .9em;		}
+
+		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 1.8em;			margin: 2.5em auto 0 auto;		}
 
 		/* About us */
 		#about-us {		padding-top: 5em;	}
@@ -798,7 +864,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#projects span {		height: 3.4em;		top: 65%;		}
 
-		#projects span h4 {		font-size: 1.1em;		margin: 0 auto; 	}
+		#projects span h4 {		font-size: .8em;		margin: 0 auto; 	}
 
 		#projects span h5 {		font-size: .8em;			}
 
@@ -812,7 +878,9 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 	/* Footer */
 	footer div[id*='icon-'] + p {		font-size: 1em;		}
 
+	footer div.other-links {	height: 27.5em;	}
 
+	footer #developer-detail h5 {		font-size: .7em;	}
 
 
 
@@ -873,7 +941,14 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#banner #banner-logo div.img {		width: 20em;		height: 20em;	}
 
-		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 2em;			margin: 1em auto 0 auto;			}
+		#banner #banner-company-profile { 	width: 25em;	}
+
+		#banner #banner-company-profile h4 {	font-size: 1.2em;		}
+
+		#banner #banner-company-profile h5 {	font-size: 1em;		}
+
+		#banner #banner-text {		padding: 5em auto 0 auto;		font-size: 2em;			margin: 2.5em auto 0 auto;			}
+
 
 		/* About us */
 		#about-us {		padding-top: 5em;	}
@@ -937,7 +1012,7 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 		#projects span {		height: 3.4em;		top: 65%;		}
 
-		#projects span h4 {		font-size: 1.2em;		margin: 0 auto;	}
+		#projects span h4 {		font-size: 1em;		margin: 0 auto;	}
 
 		#projects span h5 {		font-size: .9em;		}
 
@@ -950,6 +1025,10 @@ footer div[id*='icon-'] + p {		font-size: 0.8em;		}
 
 	/* Footer */
 	footer div[id*='icon-'] + p {		font-size: 1.2em;		}
+
+	footer div.other-links {	height: 30em;	}
+
+	footer #developer-detail h5 {		font-size: .8em;	}
 
 
 

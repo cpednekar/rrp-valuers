@@ -12,9 +12,9 @@ $(document).ready(function(){
 	});
 
 	// Page scroll to top
-	$('html, body').animate({
-	    scrollTop: $( '#banner' ).offset().top
-	}, 500);
+	// $('html, body').animate({
+	//     scrollTop: $( '#banner' ).offset().top
+	// }, 500);
 
 
 });

@@ -139,7 +139,7 @@ hr {	border: none;		height: .063em;		width: 100%;			clear: both;
 
 #the-team div[class*='memb-detail'] {	float: left;		padding: 0 auto;		}
 
-#the-team div.memb-id div.img {			margin: 0 auto;			box-shadow: .5em .5em 1em #666666;	}
+#the-team div.memb-id div.img {			margin: 0 auto;			border: .1em solid #9f9f9f;	}
 
 #the-team div.memb-detail h4
 						{		letter-spacing: 0.005em;		word-spacing: .1em;			padding: 1em auto;		color: #373737; 	
@@ -239,14 +239,14 @@ hr {	border: none;		height: .063em;		width: 100%;			clear: both;
 
 #projects div[class*='proj-'] {		position: relative;			overflow: hidden;	}
 
-#projects div.img {		margin: .5em 1em;		width: 100%;		background-size: cover;		}	
+#projects div.img {		margin: .5em 1em 0 1em;		width: 100%;		background-size: cover;		}	
 
 /* Transition effect for span */
 /*#projects div.img + span.show-detail {	top: 0;		}*/
 
-#projects span {	display: block;		width: 100%;		height: 3.4em;		position: absolute;		top: 65%;		z-index: 1;
+#projects span {	display: block;		width: 100%;		height: 3.4em;		position: relative;			z-index: 1;
 					margin: 0em 1em;			-webkit-transition: top .5s;			-moz-transition: top .5s;			transition: top .5s;		
-					background-color: #666666;		opacity: .75;			padding: .5em 0em;		}
+					background-color: #666666;		opacity: .75;			padding: .5em 0em;		clear: both;	}
 
 #projects span h4 {		word-spacing: .2em;		position: relative;		padding: 0;		font-family: 'Glegoo', serif;		font-weight: 400;		
 						line-height: 1em; 		}
@@ -417,7 +417,7 @@ h3 {	font-size: 1.5em;	}
 
 	#projects div.img {		height: 10em;		}
 
-	#projects span {		height: 3.4em;		top: 65%;		}
+	#projects span {		height: 3.4em;			}
 
 	#projects span h4 {		font-size: 1.1em;		margin: 0 auto;			}
 
@@ -565,7 +565,7 @@ footer #developer-detail h5 {		font-size: .65em;	}
 
 		#projects div.img {		height: 20em;		}
 
-		#projects span {		height: 3.7em;		top: 80%;		}
+		#projects span {		height: 3.7em;				}
 
 		#projects span h4 {		font-size: 1.5em;		margin: 0 auto;			}
 
@@ -716,7 +716,7 @@ footer #developer-detail h5 {		font-size: .65em;	}
 
 		#projects div.img {		height: 10em;		}
 
-		#projects span {		height: 3.4em;		top: 65%;		}
+		#projects span {		height: 3.4em;			}
 
 		#projects span h4 {		font-size: 1em;			margin: 0 auto;		}
 
@@ -862,7 +862,7 @@ footer #developer-detail h5 {		font-size: .65em;	}
 
 		#projects div.img {		height: 10em;		}
 
-		#projects span {		height: 3.4em;		top: 65%;		}
+		#projects span {		height: 3.4em;				}
 
 		#projects span h4 {		font-size: .8em;		margin: 0 auto; 	}
 
@@ -1010,7 +1010,7 @@ footer #developer-detail h5 {		font-size: .65em;	}
 
 		#projects div.img {		height: 10em;		}
 
-		#projects span {		height: 3.4em;		top: 65%;		}
+		#projects span {		height: 3.4em;				}
 
 		#projects span h4 {		font-size: 1em;		margin: 0 auto;	}
 

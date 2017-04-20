@@ -243,9 +243,10 @@ div.corp-client .img:hover .tooltip {	visibility: visible;	opacity: 1;		}
 div.corp-client .img:hover .tooltip::after {	content: " ";	position: absolute;		top: 100%;		left: 50%;		margin-left: -0.1em;
 												border-width: 0.1em;		border-style: solid;		border-color: black transparent transparent transparent;	}
 
-.est-client, .empanelment {	text-align: left;	}
+.est-client, .empanelment {	text-align: justify;	}
 
-.est-client h5, .empanelment h5 {	font-family: 'Glegoo', serif;		display: inline-block;		padding: 1em 0 0 0;		font-weight: 700;			}
+.est-client h5, .empanelment h5 {	font-family: 'Glegoo', serif;		display: inline-block;		padding: 1em 0 0 0;		font-weight: 700;		
+									display: flex;		line-height: 1.5em;			}
 
 .est-client h5:before {		counter-increment: esteemed_client_count;		content: counter(esteemed_client_count) ")";		padding-right: .5em;		}
 

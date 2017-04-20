@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<g>
+<path 
+    fill="#DA2244" 
+    d="M928.7,377.5
+    H622.5
+    V71.2
+    c0-33.8-27.4-61.2-61.2-61.2
+    H438.7
+    c-33.9,0-61.2,27.5-61.2,61.2
+    v306.3
+    H71.2
+    c-33.9,0-61.2,27.4-61.2,61.3
+    v122.5
+    c0,33.9,27.4,61.2,61.2,61.2
+    h306.3
+    v306.3
+    c0,33.9,27.4,61.3,61.2,61.3
+    h122.5
+    c33.9,0,61.2-27.4,61.2-61.3
+    V622.5
+    h306.3
+    c33.9,0,61.2-27.4,61.2-61.2
+    V438.7C990,404.9,962.6,377.5,928.7,377.5
+    z" />
+</g>
+</svg>
